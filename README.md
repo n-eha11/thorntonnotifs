@@ -1,4 +1,4 @@
-thorntonnotifs sends notifications to your phone whenever Professor Thornton releases Reinforcement Exercises and/or Projects by monitoring his coursewide 
+For ICS H32 or 33 students, thorntonnotifs sends notifications to your phone whenever Professor Thornton releases Reinforcement Exercises and/or Projects by monitoring his coursewide 
 announcements on his course website's "Course News" webpage. Clicking on the notification will take you to the course website's "Schedule" page.
 
 Setup
