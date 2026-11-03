@@ -140,7 +140,6 @@ def send_notif(notif_content: list[str], code: str|int) -> None:
     '''
     course = str(code).upper()
     topic = os.environ[f"NTFY_{course}_TOPIC"]
-    #topic = f"thornton-{course}-notifs-m1102e16"
     url = f"https://ntfy.sh/{topic}"
 
     notifs = "\n".join(notif_content)
