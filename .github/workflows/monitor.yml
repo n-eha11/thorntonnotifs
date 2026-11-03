@@ -1,0 +1,45 @@
+name: thorntonnotifs 
+
+on: 
+  workflow_dispatch: 
+  schedule:
+    - cron: "8,38 * * * *"
+
+permissions:
+  contents: write
+
+concurrency: 
+  group: thorntonnotifs-monitor 
+  cancel-in-progress: false 
+
+jobs: 
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@7
+
+      - name: Set up python
+        uses: actions/setup-python@7
+        with: 
+          python-version: "3.14"
+      
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      
+      - name: Run thorntonnotifs
+        env:
+          NTFY_H32_TOPIC: ${{ secrets.NTFY_H32_TOPIC }}
+        run: python notif.py
+      
+      - name: Persist announcement baseline
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add announcements.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update announcements baseline"
+            git push 
+          fi 
+
