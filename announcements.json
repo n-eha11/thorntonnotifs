@@ -1,4 +1,12 @@
 {
+    "Th 11/5": {
+        "announcement": "The next set of Reinforcement Exercises, along with solutions to the previous set, Project 3, and a Schedule update are now available.",
+        "links": [
+            "Exercises",
+            "ProjectGuide/Project3",
+            "Schedule.html"
+        ]
+    },
     "Tu 11/3": {
         "announcement": "Additional Notes and Examples are now available, along with a Schedule update.",
         "links": [
