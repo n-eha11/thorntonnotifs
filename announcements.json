@@ -1,4 +1,19 @@
 {
+    "Th 11/19": {
+        "announcement": "Both remaining sets of Reinforcement Exercises, along with solutions to the previous set, an additional set of Notes and Examples, and a Schedule update are now available.",
+        "links": [
+            "Exercises",
+            "Notes",
+            "Schedule.html"
+        ]
+    },
+    "M 11/16": {
+        "announcement": "Project 4 and Project 5 are now available.",
+        "links": [
+            "ProjectGuide/Project4",
+            "ProjectGuide/Project5"
+        ]
+    },
     "Th 11/12": {
         "announcement": "The next set of Reinforcement Exercises, along with solutions to the previous set, and a Schedule update are now available.",
         "links": [
